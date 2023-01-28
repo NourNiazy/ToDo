@@ -1,0 +1,46 @@
+.navbar {
+    width: 100%;
+    margin-bottom: 70px;
+    margin-bottom: 10px;
+    background-color: white;
+    padding: 0px 100px;
+    box-sizing: border-box;
+    padding: 20px 0px;
+}
+
+h1 {
+    margin: 0px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar h1 {
+    color: #9e26df;
+}
+
+.links a {
+    text-decoration: none;
+    margin: 0px 5px;
+    color: black;
+}
+
+.navbar button {
+    background-image: linear-gradient(45deg, #9e26df 0%, #c61488 100%);
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 15px;
+}
