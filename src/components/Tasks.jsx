@@ -4,7 +4,7 @@ import {style} from "../css/tasks.css";
 import Task from './Task';
 import { useParams } from "react-router-dom";
 const Tasks = () => {
-  const [arr] = useState([]);
+  const [arr,setArray] = useState([]);
   const [InputData, setInputData] = useState([]);
 
     const handleSubmit=(e)=>{
@@ -13,7 +13,7 @@ const Tasks = () => {
     }
     const addToArray=()=>{
       arr.push(InputData);
-      console.log(arr);
+      setArray([...arr])
     }
   return (
     <div className="tasks">
