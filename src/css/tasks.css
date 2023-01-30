@@ -1,0 +1,118 @@
+.tasks {
+    background-color: rgb(231, 210, 245);
+    
+
+}
+
+.tasks .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container {
+    width: 1200px;
+    margin: 0px auto;
+}
+
+.todo-button {
+    background-image: linear-gradient(45deg, #9e26df 0%, #c61488 100%);
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 25px;
+    padding: 8px 25px;
+    height: 50px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.todo-form {
+    margin: 50px 0px;
+}
+
+.todo-input {
+    font-size: 16px;
+    border-radius: 25px;
+    color: #776f6f;
+    border: none;
+    border: 2px solid #f1f1f1;
+    padding: 8px;
+    width: 350px;
+    height: 50px;
+    box-sizing: border-box;
+}
+
+.todo-input::placeholder {
+    font-size: 16px;
+    color: #9e26df;
+}
+
+.create-task {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.todo-row {
+    background-color: white;
+    color: #776f6f;
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    display: flex;
+    align-self: flex-start;
+}
+.tasks-box .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.tasks-box .task-box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: white;
+    width: 30%;
+    padding: 20px;
+    margin-right: 40px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    height: 250px;
+    max-height: 250px;
+    color: #776f6f;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+    
+    overflow: auto;
+}
+.task-box .content :last-child{
+    margin-right: 0px;
+}
+.task-box p{
+    padding: 0px;
+    margin: 0px;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+   /* border: 1px solid #f1f1f1;*/
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #9e26df;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #570f7d;
+}
