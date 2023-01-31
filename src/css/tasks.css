@@ -116,3 +116,10 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #570f7d;
 }
+
+button:disabled,
+button[disabled] {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+}
