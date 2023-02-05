@@ -3,16 +3,25 @@ import { useState } from 'react';
 import {style} from "../css/tasks.css";
 import Task from './Task';
 import TaskForm from './TaskForm';
-const Tasks = ({InputData, setInputData}) => {
+const Tasks = () => {
   const [arr,setArray] = useState([]);
     const handleSubmit=(e)=>{
         e.preventDefault();
         
     }
-    const addToArray=()=>{
-      arr.push(InputData);
+    const addToArray=(task)=>{
+
+      
+      console.log('inn parent');
+
+      // log paramter value
+      console.log(task);
+
+      // add task to array
+      arr.push(task);
+
+      // update array
       setArray([...arr])
-      setInputData([""]);
       
     }
   return (
