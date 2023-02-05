@@ -119,5 +119,5 @@
 
 button:disabled,
 button[disabled] {
-    color: #fefefe;
+    color: #eae4e4;
 }
