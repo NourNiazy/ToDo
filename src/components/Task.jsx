@@ -1,15 +1,15 @@
 import React from 'react'
 import Tasks from './Tasks';
-const Task = ({arr}) => {
+const Task = ({arr,task}) => {
   return (
     <div>
       <div className="tasks-box">
       <div className="container">
         <div className="content">
-              {arr.map((item)=>(
+              {arr.map((task)=>(
                 
-            <div className="task-box"key={item}>
-              <p >{item}</p>
+            <div className="task-box"key={task.id} id={task.id}>
+              <p >{task.taskContent}</p>
               
             </div>
               ))}
