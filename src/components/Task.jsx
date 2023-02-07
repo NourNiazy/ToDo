@@ -2,10 +2,9 @@ import React from 'react'
 import Tasks from './Tasks';
 const Task = ({arr,setArray}) => {
   const deleteTask=(id)=>{
+    const newarr = arr.filter((task) => task.id !== id);
       console.log("delete");
       console.log(id);
-      var newarr=arr;
-      newarr.splice(id,1);
       setArray([...newarr])
       console.log(newarr);
     }
@@ -14,11 +13,11 @@ const Task = ({arr,setArray}) => {
       <div className="tasks-box">
       <div className="container">
         <div className="content">
-              {arr.map((task,id)=>(
+              {arr.map((task)=>(
                 
             <div className="task-box"key={task.id} id={task.id}>
               <p >{task.taskContent}</p>
-              <button onClick={deleteTask} className="delete-btn">Delete</button>
+              <button onClick={() => deleteTask(task.id)} className="delete-btn">Delete</button>
             </div>
               ))}
             
