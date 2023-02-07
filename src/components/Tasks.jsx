@@ -13,8 +13,10 @@ const Tasks = () => {
       
      let taskObject={
     taskContent:task,
-    id:arr.length+1
+    id:arr.length+1,
+    isDone:false
   } 
+ 
       // add task to array
       arr.push(taskObject);
 
