@@ -1,24 +1,15 @@
 import React from 'react'
 import { useState} from 'react';
 const TaskForm = ({handleSubmit, addToArray}) => {
-  
   const [InputData, setInputData] = useState('');
-
   const submitBtn=()=>{
-
-    console.log('fromChild');
-
     // call function in parent with paramter
     addToArray(InputData)
-
     // empty this value
     setInputData('')
-    
   }
 
-
   return (
-    
       <div className='tasks-form'>
       <div className="container">
         <div className="content">
