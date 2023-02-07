@@ -16,7 +16,7 @@ const Tasks = () => {
   } */
     const addToArray=(task)=>{
       
-     var taskObject={
+     let taskObject={
     taskContent:task,
     id:arr.length+1
   } 
@@ -30,12 +30,13 @@ console.log(taskObject.id);
 
       // update array
       setArray([...arr])
-      
     }
+    
+    
   return (
     <div className="tasks">
       <TaskForm handleSubmit={handleSubmit} addToArray={addToArray}/>
-      <Task arr={arr} key={arr.taskContent}/>
+      <Task arr={arr} setArray={setArray}/>
     
     </div>
     
