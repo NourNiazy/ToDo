@@ -31,12 +31,15 @@ console.log(taskObject.id);
       // update array
       setArray([...arr])
     }
-    
+    const deleteTask=(id)=>{
+    const newarr = arr.filter((task) => task.id !== id);
+      setArray([...newarr]);
+    }
     
   return (
     <div className="tasks">
       <TaskForm handleSubmit={handleSubmit} addToArray={addToArray}/>
-      <Task arr={arr} setArray={setArray}/>
+      <Task arr={arr} deleteTask={deleteTask}/>
     
     </div>
     

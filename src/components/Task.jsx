@@ -1,13 +1,7 @@
 import React from 'react'
 import Tasks from './Tasks';
-const Task = ({arr,setArray}) => {
-  const deleteTask=(id)=>{
-    const newarr = arr.filter((task) => task.id !== id);
-      console.log("delete");
-      console.log(id);
-      setArray([...newarr])
-      console.log(newarr);
-    }
+const Task = ({arr,deleteTask}) => {
+    
   return (
     <div>
       <div className="tasks-box">
