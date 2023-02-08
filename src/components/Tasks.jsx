@@ -24,7 +24,7 @@ const Tasks = () => {
     }
 
 
-    
+
     const deleteTask=(id)=>{
       const newarr = arr.filter((task) => task.id !== id);
       setArray([...newarr]);
