@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.complete{
+  text-decoration: line-through;
+}
+.not-complete{
+  text-decoration: unset;
+}
